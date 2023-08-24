@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nodejs-health-check-viuc
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/quay_xjiang/rhtap-demo-gjnx-tenant/e2e-nodejs/nodejs-health-check-viuc@sha256:fb99079d8a4f9e69b17e19ac4d3068fbab403d0014989a097f5a78a002ac9f81
         name: my-nodejs
         ports:
         - containerPort: 3001
