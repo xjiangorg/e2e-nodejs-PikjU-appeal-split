@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-viuc
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/quay_xjiang/rhtap-demo-gjnx-tenant/e2e-nodejs/nodejs-health-check-viuc@sha256:fb99079d8a4f9e69b17e19ac4d3068fbab403d0014989a097f5a78a002ac9f81
+        name: my-nodejs
+        resources: {}
+status: {}
